@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_create_new_recipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/layout_add_recipe_name"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_text_recipe_name"
+            android:id="@+id/recipe_name"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/button_add_recipe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_name"
+            android:layout_weight="1"
+            android:onClick="addRecipeName" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_recipe_create"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/text_view_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_add_ingredients"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_text_add_ingredient"
+                    android:id="@+id/ingredient_name"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="@string/button_add_ingredient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_ingreditent"
+                    android:onClick="addIngredient"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="@string/text_view_cooking_steps"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_add_cooking_steps"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_text_add_cooking_step"
+                    android:id="@+id/cooking_step"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="@string/button_add_cooking_strp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_cooking_step"
+                    android:onClick="addCookingStep"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Chefjayjay</string>
+    <string name="button_create_new_recipe">Create New Recipe</string>
+    <string name="text_view_recipe_create_desc">Create a new recipe to be viewed by your followers.</string>
+    <string name="edit_text_recipe_name">Enter Recipe Name...</string>
+    <string name="button_add_recipe_name">Next</string>
+    <string name="button_add_ingredient">Add</string>
+    <string name="edit_text_add_ingredient">Enter Ingredient...</string>
+    <string name="text_view_ingredients">Ingredients</string>
+    <string name="text_view_recipes_desc">Recipes</string>
+    <string name="text_view_interactions">Interactions</string>
+    <string name="button_add_interaction">Add Interaction</string>
+    <string name="button_add_picture">Add Picture</string>
+    <string name="text_view_cooking_steps">Cooking Steps</string>
+    <string name="edit_text_add_cooking_step">Enter Cooking Step...</string>
+    <string name="button_add_cooking_strp">Add</string>
+</resources>
