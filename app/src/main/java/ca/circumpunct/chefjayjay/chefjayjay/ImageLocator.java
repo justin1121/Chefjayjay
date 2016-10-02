@@ -1,7 +1,5 @@
 package ca.circumpunct.chefjayjay.chefjayjay;
 
-import android.net.Uri;
-
 import io.realm.RealmObject;
 
 public class ImageLocator extends RealmObject {

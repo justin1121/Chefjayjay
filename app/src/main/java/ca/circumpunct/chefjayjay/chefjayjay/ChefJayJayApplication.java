@@ -20,6 +20,7 @@ public class ChefJayJayApplication extends Application {
         realm.executeTransaction(new Realm.Transaction() {
             @Override
             public void execute(Realm realm) {
+                // clear realm on start up for debugging purposes
                 realm.deleteAll();
             }
         });

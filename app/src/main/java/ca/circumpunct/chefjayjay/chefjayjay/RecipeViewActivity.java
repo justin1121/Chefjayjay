@@ -28,7 +28,7 @@ public class RecipeViewActivity extends AppCompatActivity {
         RealmResults<RecipeInteractions> interactions_result;
         interactions_added = new ArrayList<>();
 
-        long recipe_id =  getIntent().getLongExtra("recipe_id", 1);
+        long recipe_id = getIntent().getLongExtra("recipe_id", 1);
 
         realm = Realm.getDefaultInstance();
 

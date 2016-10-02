@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -37,7 +36,7 @@ public class CreateNewRecipeActivity extends AppCompatActivity {
         final String recipe_name = editText.getText().toString();
 
         layout.removeView(findViewById(R.id.add_name));
-        layout.removeView((View)editText);
+        layout.removeView(editText);
 
         TextView textView = new TextView(this);
         textView.setTextSize(40);
